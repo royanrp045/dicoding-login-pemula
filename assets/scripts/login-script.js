@@ -22,4 +22,9 @@ loginFormElement.addEventListener('submit', function (event) {
      Jika variabel email identik dengan expectedEmail dan password identik dengan expectedPassword, panggil fungsi goToHome().
      Jika tidak, maka panggil fungsi showPopUp().
    */
+  if (email == expectedEmail && password == expectedPassword) {
+    goToHome();
+  } else {
+    showPopUp();
+  }
 });
